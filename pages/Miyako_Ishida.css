@@ -1,0 +1,41 @@
+body{
+    background-image: url(../img/otherKNKBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::after {
+    content: ""; /*Aparentemente se tirar isso o vignette para, n sei pq ¯\_(ツ)_/¯ */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none; /*Se tirar isso os link param de ser clicaveis*/
+
+    /*Dei uma pesquisada e foi isso oq eu achei sobre vignette*/
+    background: radial-gradient(
+            ellipse at center,
+            rgba(0, 0, 0, 0.1) 40%, /*Esse RGB é pro centro do vignette*/
+            rgba(0, 0, 0, 0.8) 100% /*Esse RGB é pra "borda" do vignette (mudar só o ultimo valor)*/
+    );
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    transform: translateY(120%);
+    font-size: 80px;
+    font-family: monospace;
+}
+
+h3 {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    transform: translateY(100%);
+    font-size: 50px;
+    border-radius: 10px;
+    border: 4px solid white;
+}

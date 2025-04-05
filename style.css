@@ -1,0 +1,71 @@
+body{
+    background-image: url(./img/KoeNoKatachi_up.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::after {
+    content: ""; /*Aparentemente se tirar isso o vignette para, n sei pq ¯\_(ツ)_/¯ */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none; /*Se tirar isso os link param de ser clicaveis*/
+
+    /*Dei uma pesquisada e foi isso oq eu achei sobre vignette*/
+    background: radial-gradient(
+            ellipse at center,
+            rgba(0, 0, 0, 0.1) 40%, /*Esse RGB é pro centro do vignette*/
+            rgba(0, 0, 0, 1.3) 100% /*Esse RGB é pra "borda" do vignette (mudar só o ultimo valor)*/
+    );
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+table {
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    border-spacing: 0px;
+    border-collapse: separate;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+td {
+    text-align: left;
+    vertical-align: top;
+    color: black;
+    font-size: 200%;
+
+    /*borda de cada imagem*/
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    border-spacing: 0px;
+    border-collapse: separate;
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.img_scaler {
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
