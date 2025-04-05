@@ -1,7 +1,7 @@
 body{
     background-image: url(../img/KNKBackGround.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 body::after {
