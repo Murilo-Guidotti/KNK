@@ -12,7 +12,7 @@ body::after {
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    pointer-events: none; /*Se tirar isso os link param de ser clicaveis*/
+    pointer-events: none; /*Se tirar isso os link param de ser clicaveis */
 
     /*Dei uma pesquisada e foi isso oq eu achei sobre vignette*/
     background: radial-gradient(
